@@ -1,0 +1,5 @@
+cmake_minimum_required (VERSION 2.6)
+project (kbacklight)
+add_executable (kbacklight kbacklight.c)
+target_link_libraries (kbacklight udev)
+install (TARGETS kbacklight DESTINATION bin)
